@@ -1,0 +1,24 @@
+.container-photos{
+    width: 80vw;
+    height: 15vh;
+    display: flex;
+    overflow-x: hidden;
+    background: gray;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-photos p{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: gray;
+    border: 2px solid #fff;
+    margin: 0 5px;
+}
+
+.container-photos p:hover{
+    transform:  scale(125%);
+    transition: 0.2s;
+}

@@ -1,0 +1,137 @@
+.container-produto{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 20pt;
+    font-family:sans-serif;
+    color: #970b32;
+
+}
+
+.container-produto-image{
+    padding: 20px;
+    width: 50%;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.exposicao{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.exposicao img{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.exposicao img:hover{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.images-prod-icons{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.images-prod-icons p{
+    width: 80px;
+    height: 80px;
+    border-radius:  5px;
+    padding: 2px;
+    position: relative;
+}
+
+.images-prod-icons p:hover{
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container-compra{
+    width: 45%;
+    height: 100%;
+}
+
+.venda{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Roboto;
+}
+
+.valor-produto{
+    background-color: #970b32;
+    padding:10px;
+    width: 80%;
+    color: #fff;
+    font-size: 25pt;
+    border-radius: 5px;
+}
+
+.info-representante{
+    width: 80%;
+    background-color: rgba( 255,255,255,0.8);
+    font-stretch: expanded;
+    padding: 10px;
+    border-radius: 5px;
+    background: gray;
+    color: #fff;    
+}
+
+.redes-contato{
+    width: 80%;
+    font-size: 12pt;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexColum{
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+    color: #970b32;
+    cursor: pointer;
+    position: relative;
+}
+
+.icons:hover{
+    animation: motion 1.5s infinite;
+}
+
+
+@keyframes motion{
+    0%{
+        transform: translateY(0)
+    }
+    33%{
+        transform: translateY(-10px)  rotate(45deg)
+    }
+    66%{
+        transform: rotate(-45deg)
+    }
+    100%{
+        transform: translateY(0)
+    }
+}

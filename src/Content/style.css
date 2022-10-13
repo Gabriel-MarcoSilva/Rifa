@@ -1,0 +1,14 @@
+.container-Content{
+    width: 80vw;
+    height: 40vh;
+    color: #fff;
+    background: #970b32;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+
+.title-Content{
+    color: #fff;
+}
