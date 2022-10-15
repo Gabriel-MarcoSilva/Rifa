@@ -12,13 +12,7 @@ const Produto = () => {
                 <section className="exposicao flexColum">
                     <img src={imageTest} />
                 </section>
-                <section className="images-prod-icons">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
-                </section>
+                
             </div>
             <div className="container-compra flexColum">
                 <section className="venda flexColum">
