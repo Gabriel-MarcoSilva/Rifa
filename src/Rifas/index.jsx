@@ -7,7 +7,7 @@ import "./style.css"
 const Rifas = () => {
 
     const [riflles, setRiflles] = useState([])
-    const [checked, setChecked] = useState([])
+    const [rifa, setRifa] = useState([])
 
     useEffect(() => {
         (async () => {
@@ -17,18 +17,18 @@ const Rifas = () => {
     }, [])
 
     const handleCheck = (event) => {
-        var updatedList = [...checked];
+        var updatedList = [...rifa];
         if (event.target.checked) {
-            updatedList = [...checked, Number(event.target.value) + 1];
+            updatedList = [...rifa, Number(event.target.value) + 1];
         } else {
-            updatedList.splice(checked.indexOf(Number(event.target.value) + 1), 1);
+            updatedList.splice(rifa.indexOf(Number(event.target.value) + 1), 1);
         }
-        setChecked(updatedList);
+        setRifa(updatedList);
     };
 
     return (
         <>
-            <Contato rifa={checked} />
+            <Contato rifa={rifa} />
             <section className="container-rifas">
                 {
                     riflles.map((rifas) => {

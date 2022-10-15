@@ -1,0 +1,26 @@
+.container-pix{
+    width: 30vw;
+    height: 70vh;
+    padding: 20px;
+    display: none;
+    align-items: center;
+    margin-top: -10vh;
+    margin-left: 20vh;
+    border-radius: 5px;
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed; 
+    background: #fff;
+    box-shadow: 3px  3px 20px rgba(0,0,0,0.8)
+}
+
+.chave{
+    padding: 10px;
+    background: rgba(151,11,50,0.8);
+    border-radius: 5px;
+    color: #fff;
+}
+.img-QR{
+    width: 200px;
+}

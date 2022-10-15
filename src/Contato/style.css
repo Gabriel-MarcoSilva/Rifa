@@ -1,16 +1,35 @@
 .container-contato{
     position: fixed;
     margin: auto;
+    overflow-y: auto;
     width: 50vw;
     height: 60vh;
     border-radius: 5px;
     padding: 20px;
-    display: flex;
+    display: none;
     margin-top: 20vh;
     z-index:1;
     flex-direction: column;
     background: #fff;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
+}
+
+.message{
+    font-size: 10pt;
+    color: red;
+    font-weight: bold;
+}
+.numbers{
+    opacity: 0;
+    height: 2px;
+
+}
+
+.number{
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .container-contato form{
