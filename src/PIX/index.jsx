@@ -1,14 +1,13 @@
 import React from 'react'
 
 import "./style.css"
-import Image from "../Images/QRcode.png"
+import Image from "../Images/QRcode.jpeg"
 import { GrFormClose } from 'react-icons/gr'
-
 
 const PIX = (rifa) =>{
 
-    let valor = rifa.rifa.rifa.length * 5
-    console.log(rifa.rifa.rifa.length)
+    let valor = rifa.rifa.rifa.length * 10
+
     return(
         <section className="container-pix">
 
@@ -20,11 +19,13 @@ const PIX = (rifa) =>{
             >
                 < GrFormClose />
             </a>
-            <h1>Scanei o QR code abaixo:</h1>
+            <h1 className="key-title-primary">Escaneie o QR code abaixo e preencha o valor:</h1>
             <span>no valor de R$ {valor},00 reais</span>
             <img src={Image} className="img-QR"/>
-            <h1> ou utilize a chave abaixo</h1>
-            <p className="chave">chave pix</p>
+            <p>Jade Oliveira Cordeiro</p>
+
+            <h2 className="key-title"> ou utilize a chave abaixo: <p className="symbol">👇</p></h2>
+            <p className="chave">jade.cordeiro@yahoo.com.br</p>
         </section>
     )
 }

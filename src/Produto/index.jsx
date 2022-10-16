@@ -16,7 +16,7 @@ const Produto = () => {
             </div>
             <div className="container-compra flexColum">
                 <section className="venda flexColum">
-                    <section className="valor-produto"> Valor R$ 2,00 </section>
+                    <section className="valor-produto"> Valor R$ 10,00 </section>
                     <section className="info-representante">Representante: <br /> Jade Oliveira Cordeiro <br /> (75) 98871-8531 </section>
                     <section className="redes-contato">
                         <p>Redes sociais:</p>
