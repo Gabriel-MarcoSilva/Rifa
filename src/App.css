@@ -22,3 +22,9 @@ main{
 ::-webkit-scrollbar-thumb{
     background-color: #970b32;
 }
+
+@media (max-width: 425px) {
+    main{
+        height: 270vh;
+    }
+}

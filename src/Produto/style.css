@@ -16,6 +16,7 @@ h1{
 .container-produto-image{
     padding: 20px;
     width: 50%;
+    heigth: 50vh;
     margin-right: 15px;
     display: flex;
     flex-direction: column;
@@ -23,21 +24,22 @@ h1{
 
 .exposicao{
     width: 100%;
-    height: 60%;
+    max-height: 60%;
     display: flex;
     flex-direction: column;
 }
 
 .exposicao img{
-    width: 90%;
+    width: 70%;
+    max-height: 55vh;
     margin: auto;
     padding: 10px;
     transition: 0.5s;
 }
 
 .exposicao img:hover{
-    width: 100%;
     transition: 0.5s;
+    transform: scale(110%);
 }
 
 .images-prod-icons{
@@ -53,7 +55,14 @@ h1{
     height: 80px;
     border-radius:  5px;
     padding: 2px;
+    margin-top: 50px;
     position: relative;
+}
+
+.images-prod-icons p img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5)
 }
 
 .images-prod-icons p:hover{
@@ -133,5 +142,28 @@ h1{
     }
     100%{
         transform: translateY(0)
+    }
+}
+
+@media (max-width: 425px) {
+
+    .container-produto{
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    .container-produto-image{
+        min-width: 90%;
+        margin: auto;
+    }
+    .container-compra{
+        width: 100%;
+    }
+    .valor-produto{
+        font-size: 12pt;
+        margin: 0 5px;
+    }
+    .info-representante{
+
     }
 }

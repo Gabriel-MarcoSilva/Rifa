@@ -22,3 +22,11 @@
     transform:  scale(125%);
     transition: 0.2s;
 }
+
+@media (max-width: 425px) {
+    .container-photos p{
+        width: 30px;
+        height: 30px;
+    }
+
+}

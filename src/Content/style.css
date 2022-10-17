@@ -6,9 +6,22 @@
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    text-align: justify;
     border-radius: 6px;
 }
 
 .title-Content{
     color: #fff;
+}
+
+@media (max-width: 425px) {
+    .container-Content{
+        font-size: 10pt;
+        height: 60vh;
+        text-align: justify;
+    }
+
+    .title-Content{
+        font-size: 12pt;
+    }    
 }
